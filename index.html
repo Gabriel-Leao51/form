@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Entry Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+
+    <main>
+      <form action="/user-data" method="GET">
+        <h2>How can we help you?</h2>
+
+        <section>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                required
+                placeholder="Enter your name here"
+              />
+            </li>
+            <li>
+              <label for="email">Your E-Mail Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="example@mail.com"
+              />
+            </li>
+            <li>
+              <label for="phone#">Your Phone Number</label>
+              <input type="tel" name="phone#" id="phone#" required />
+            </li>
+            <li>
+              <label for="msg">Your Message</label>
+              <textarea
+                name="msg"
+                id="msg"
+                cols="30"
+                rows="7"
+                required
+              ></textarea>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="query">How did you find us?</label>
+          <select name="query" id="query" required>
+            <option value="WebSearch">WebSearch</option>
+            <option value="Friend">Recommended by a friend</option>
+            <option value="Ad">Saw one of our ads</option>
+          </select>
+        </section>
+
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply"
+                id="phone"
+                value="phone"
+                required
+              />
+              <label for="phone">Call me</label>
+            </li>
+
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply"
+                id="mail"
+                value="mail"
+                required
+              />
+              <label for="mail">Send me an email</label>
+            </li>
+
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply"
+                id="no-contact"
+                value="no-contact"
+                required
+              />
+              <label for="no-contact">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <hr />
+
+        <section class="form-control-inline">
+          <input type="checkbox" name="acc-terms" id="acc-terms" required />
+          <label for="acc-terms">Accept Terms</label>
+        </section>
+
+        <section>
+          <ul class="btn">
+            <li>
+              <button type="reset" id="reset">Clear</button>
+            </li>
+            <li>
+              <button type="submit" id="submit">Submit</button>
+            </li>
+          </ul>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

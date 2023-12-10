@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(237, 249, 254);
+  color: #1d1d20;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  width: 40rem;
+  background-color: #f5f8ff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px rgb(133, 133, 133);
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+label {
+  color: #232325;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  font: inherit;
+  border-radius: 6px;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #edf9fe;
+  color: rgb(32, 5, 63);
+}
+
+.form-control-inline {
+  display: flex;
+  margin: -0.55rem;
+}
+
+.form-control-inline input {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+hr {
+  visibility: hidden;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  margin: 0.25rem;
+  padding: 0.25rem 1.25rem;
+  font: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#reset {
+  background-color: #f5f8ff;
+  border: 1px solid #8a9cc3;
+}
+
+#reset:hover {
+  background-color: #ffffff;
+}
+
+#submit {
+  background-color: #313b59;
+  border: 1px solid #313b59;
+  color: whitesmoke;
+}
+
+#submit:hover {
+  background-color: #435077;
+}
